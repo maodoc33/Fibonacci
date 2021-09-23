@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Fibonacci
 {
     internal class Program
     {
+        /// <summary>
+        /// Main
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             Stopwatch stopWatch = new Stopwatch();
@@ -27,12 +28,9 @@ namespace Fibonacci
             stopWatch3.Start();
             result = FibonacciBottomUp(30);
             stopWatch3.Stop();
-            Console.WriteLine("Fibonacci 30=" + result + " RunTime FibonacciMemo: " + stopWatch3.ElapsedTicks);
+            Console.WriteLine("Fibonacci 30=" + result + " RunTime FibonacciBottomUp: " + stopWatch3.ElapsedTicks);
             Console.ReadLine();
-
         }
-
-
 
         /// <summary>
         /// Recursive Fibonacci
